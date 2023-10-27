@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html>
-
-<head>
- <link rel="stylesheet" href="./index.css"/>
-</head>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
 <body>
  
  <h1>ToDo Eventi</h1>
  
  <table>
-  <tr>
+  <thead>
+   <tr>
     <th>Immagine</th>
     <th>Titolo</th>
     <th>Descrizione</th>
     <th>Prezzo</th>
     <th>Link Amazon</th>
   </tr>
+  </thead>
+
+  <tbody>
   <tr>
-   <td><img src="./assets/pasta-di-zucchero.webp" alt="immagine del prodotto"/></td>
+   <td><img class="img_toggle" src="./assets/pasta-di-zucchero.webp" alt="immagine del prodotto"/></td>
     <td>Pasta di zucchero</td>
     <td>Pasta di zucchero per decorazioni torte e biscotti</td>
     <td>€ 20,00 al Kg</td>
     <td><a href="">vedi su amazon</a></td>
   </tr>
   <tr>
-   <td><img class="img_toggle" src="./assets/teglia.jpg" alt="immagine del prodotto"/></td>
+   <td><img src="./assets/teglia.jpg" alt="immagine del prodotto"/></td>
     <td>Teglia per crostata</td>
      <td>Teglia adatta per crostate fatta di un materiale che sopporta le alte temperature</td>
     <td>€ 15,00</td>
     <td><a href="">vedi su amazon</a></td>
   </tr>
   <tr>
-   <td><img src="./assets/farina.jpg" alt="immagine del prodotto"/></td>
+   <td><img class="img_toggle" src="./assets/farina.jpg" alt="immagine del prodotto"/></td>
     <td>Farina 00</td>
     <td>Farina di grano tenero per dolci e pizze di prima qualità</td>
     <td>€ 4,00 al Kg</td>
@@ -47,12 +53,13 @@
     <td><a href="">vedi su amazon</a></td>
   </tr>
   <tr>
-   <td><img src="./assets/pol.jpg" alt="immagine del prodotto"/></td>
+   <td><img class="img_toggle" src="./assets/pol.jpg" alt="immagine del prodotto"/></td>
     <td>Disco polistirolo 20 h10</td>
     <td>Polisitirolo diametro 20 altezza 10 per realizzare torte finte</td>
     <td>€ 5,00</td>
     <td><a href="">vedi su amazon</a></td>
   </tr>
+   </tbody>
  </table>
 
   <p>Lascia qui un tuo commento</p>
