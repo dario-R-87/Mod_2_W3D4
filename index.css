@@ -1,0 +1,22 @@
+table img{
+ width: 100%
+}
+
+td:nth-child(1) {
+ width: 100px;
+ heigth: 100px;
+}
+
+.amazonLink {
+ color: rgb(0,255,0);
+ background-color: white;
+ padding-left: 20px;
+}
+
+.img_toggle {
+ display: none;
+}
+
+img{
+ aspect-ratio: 1/1;
+}
