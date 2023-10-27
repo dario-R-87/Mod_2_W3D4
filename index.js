@@ -27,10 +27,15 @@ const modClassTableImg = function () {
   }
 };
 
-const changePriceColor = function (r, g, b) {
+const changePriceColor = function () {
   const prices = document.querySelectorAll("td:nth-child(4)");
-
+  let r = 0;
+  let g = 0;
+  let b = 0;
   for (let i = 0; i < prices.length; i++) {
+    r = Math.round(Math.random() * 255);
+    g = Math.round(Math.random() * 255);
+    b = Math.round(Math.random() * 255);
     prices[i].style.color = `rgb(${r},${g},${b})`;
   }
 };
@@ -41,9 +46,5 @@ setTimeout(() => {
   footerAddressChange();
   addClassAmazonLink();
   modClassTableImg();
-  changePriceColor(
-    Math.round(Math.random() * 255),
-    Math.round(Math.random() * 255),
-    Math.round(Math.random() * 255)
-  );
+  changePriceColor();
 }, "2000");
